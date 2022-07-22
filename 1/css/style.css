@@ -1,1579 +1,479 @@
-@charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
-@import url(http://fonts.googleapis.com/css?family=Signika:400,600);
-
-.open { 
-background-image: url(../img/bg.webp);
-height: 100vh;
-width: 100vw;
-position: fixed;
-top: 0;
-display: flex;
-flex-direction: column;
-align-items: center;
-align-content: center;
-justify-content: center;
-transition: 0.5s all ease;
-} 
-.open h2 {
-    font-size: 45px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-    color: #ff6060;
-}
-.open h6 {
-    font-size: 25px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-    color: #ff6060;
-}
-.open .card { background: white;
-padding: 30px;
-border-radius: 10px; 
-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
-text-align: center; 
-} 
-.open .card h3 { 
-margin-top: 20px; 
-} 
-.open .card img { 
-height: 100px; 
-} 
-.gambarikon { 
- 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-}
-.gambarikon img {
-
-    background: white;
-    border-radius: 20px;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
-    } 
-
-
-
- .atas { 
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center; 
-} .atas img {
-height: 200px;
-margin-bottom: 50px;
-background: white;
-border-radius: 20px;
-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
-} 
-.atas h2 {
-    font-size: 45px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-    color: #ff6060;
-} 
-.atas h6 {
-    font-size: 25px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-    color: #ff6060;
-}
-p {
-display: block;
-text-align: center;
-color: rgb(56, 56, 56);
-background: white;
-font-weight: bold;
-font-size: 1.5em;
-padding: 50px 30px;
-margin: 40px 20px;
-border-radius: 20px;
-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
-}
-.material-icons-sharp {
-color: red;
-font-size: 250px;
-margin-left: 50px;
-transform: translateY(5px);
-animation: kenyal 2s ease infinite;
-cursor: pointer;
-} 
-
-@keyframes kenyal { 
-0% { 
-transform: scale(1) translateY(5px);
-} 50% { 
-transform: scale(1.2) translateY(5px); } 100% { transform: scale(1) translateY(5px); } }
-/* Reset
----------------------------------*/
-ul {
-    list-style: none;
-}
-
-.figure {
-    margin: 0px;
-}
-
-img {
-    max-width: 100%;
-}
-
-a, a:hover, a:active {
-    outline: 0px !important;
-	text-decoration:none;
-}
-.clear {
-    clear: both;
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
-
-/* Common style */
-.grid figure {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	margin: 10px 1%;
-	min-width: 320px;
-	max-width: 480px;
-	max-height: 360px;
-	width: 48%;
-	background: #3085a3;
-	text-align: center;
-	cursor: pointer;
-}
-
-.grid figure img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-	max-width: 100%;
-	opacity: 0.8;
-}
-
-.grid figure figcaption {
-	padding: 2em;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-	pointer-events: none;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.grid figure figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-}
-
-.grid figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
-}
-
-.grid figure h2 span {
-	font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-	margin: 0;
-}
-
-.grid figure p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
-}
-
-/*---------------*/
-/***** Oscar *****/
-/*---------------*/
-
-figure.effect-oscar {
-	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
-}
-
-figure.effect-oscar img {
-	opacity: 0.9;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-}
-
-figure.effect-oscar figcaption {
-	padding: 3em;
-	background-color: rgba(37, 37, 37, 0.55);
-	-webkit-transition: background-color 0.35s;
-	transition: background-color 0.35s;
-}
-
-figure.effect-oscar figcaption::before {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
-	border: 1px solid #fff;
-	content: '';
-}
-
-figure.effect-oscar h2 {
-	margin: 20% 0 10px 0;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
-	color:#A3A3A3;
-}
-
-figure.effect-oscar figcaption::before,
-figure.effect-oscar p {
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0);
-	transform: scale(0);
-}
-
-figure.effect-oscar:hover h2 {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-	color: #FFFFFF;
-}
-
-figure.effect-oscar:hover figcaption::before,
-figure.effect-oscar:hover p {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	color:#fff;+++++++
-}
-
-figure.effect-oscar:hover figcaption {
-	background-color: rgba(58,52,42,0);
-}
-
-figure.effect-oscar:hover img {
-	opacity: 0.4;
-}
-
-/* Styles
----------------------------------*/
-
-h2 {
-    font-size: 38px;
-    color: #ff6060;
-    font-family: 'Raleway', sans-serif;
-    font-weight: normal;
-    margin: 0px 0 25px 0;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: #ff6060;
-    font-size: 18px;
-    margin: 0 0 5px 0;
-}
-
-h6 {
-    font-size: 16px;
-    color: #ff6060;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    margin: 0 0 60px 0;
-}
-
-p {
-    line-height: 24px;
-    margin: 0;
-}
-
-/* Header Styles
----------------------------------*/
-
-#header_wrapper {
-    background: #a1d608;
-    padding: 10px 0px;
-    border-top: 0px solid #FFFFFF;
-    box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.44);
-    text-align: center;
-}
-.header_box {
-    position: relative;
-}
-
-#main-nav {
-  float: left;
-}
-
-/* Nav Styles
----------------------------------*/
-.navbar-inverse {
-    background-color: transparent;
-    border-color: transparent;
-    text-align: center;
-    float: initial;
-    width: 100%;
-}
-
-.navbar {
-    border: 0px solid #fff;
-    min-height: 40px;
-    margin-bottom: 0px;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-    color: #171814;
-}
-
-.navStyle {
-    float: right;
-    margin: 0 auto;
-    text-align: center;
-    float: initial !important;
-}
-
-.navStyle ul {
-    list-style: none;
-    padding: 0px;
-    float: inherit;
-}
-
-.navStyle ul li {
-    display: inline-block;
-    margin: 0 5px;
-    float: inherit;
-}
-
-.navStyle ul li:first-child {
-	/*margin:0px;*/;
-}
-
-.navStyle ul li:last-child {
-    margin: 0 0 0 23px;
-}
-
-.navStyle ul li a {
-    display: block;
-    font-size: 14px;
-    color: #ff6060;
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-}
-
-.navStyle ul li a:hover {
-    color: #ED5441;
-}
-
-.navStyle > li > a:hover, .nav > li > a:focus {
-    text-decoration: none;
-    color: #ED5441;
-    background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #FFFFFF;
-    background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #FFFFFF;
-    border-radius: 0;
-    background: transparent;
-}
-
-.navStyle > li.active > a,
-.navStyle > li.active > a:hover {
-    text-decoration: none;
-    color: #ED5441;
-    background-color: transparent;
-}
-
-
-
-
-#service {
-    padding: 60px 0px;
-    background: #f3f3f3;
-}
-#service h2{
-  color: #a1d608;
-}
-.service_wrapper {
-    padding: 40px 0 40px;
-}
-
-.service_section {
-}
-
-.service_block {
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px; 
-	position: relative;
-}
-
-.service_icon {  
-    width: 250px;
-    margin-left: 30%; 
-}
-
-
-.service_block h3 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    color: #636363;
-    margin: 35px 0 15px;
-}
-.service_block h4 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    color: #770101;
-    display: block;
-    text-align: center;
-    background: white;
-    padding: 20px ;
-    border-radius: 20px;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123); 
-}
-#service h6{color: #636363;}
-.service_block p {
-    font-size: 14px;
-    color: #636363;
-    margin: 0 0 35px 0;
-}
-
-/* Latest Work
----------------------------------*/
-
-
-#work_outer {
-    background: #f9f9f9;
-    padding: 70px 0px;
-    position: relative;
-}
-
-.work_pic {
-    position: absolute;
-    right: 0;
-    top: 25%;
-    width: 50%;
-}
-
-.inner_section {
-    padding: 0px;
-}
-
-.service-list {
-    padding: 0 0 0 0;
-    font-size: 14px;
-    margin-bottom: 40px;
-}
-
-.service-list-col1 {
-    float: left;
-    width: 60px;
-    text-align: center;
-}
-
-.service-list-col1 i {
-    display:;
-    color: #888;
-    font-size: 19px;
-    font-style: normal;
-    line-height: 20px;
-}
-
-.service-list-col2 {
-    overflow: hidden;
-}
-
-.page_section.alabaster {
-    background: #fafafa;
-}
-
-.work_bottom {
-    padding: 20px 0 0 0px;
-}
-
-.work_bottom span {
-    font-size: 18px;
-    color: #333333;
-    display: block;
-    margin: 0 0 20px 0;
-}
-
-a.contact_btn {
-    background: #fff;
-    text-transform: uppercase;
-    display: block;
-    width: 176px;
-    height: 49px;
-    text-align: center;
-    line-height: 49px;
-    font-size: 16px;
-    color: #ED5441;
-    border-radius: 3px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    border: 2px solid #ED5441;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-}
-
-a.contact_btn:hover {
-    background: #ED5441;
-    color: #fff;
-}
-
-.input-text {
-    background: transparent;
-}
-
-
-/* Portfolio
----------------------------------*/
-
-
-#Portfolio {
-    padding: 60px 0px;
-}
-
-.Portfolio-nav {
-    padding: 0;
-    margin: 0 0 45px 0;
-    list-style: none;
-    text-align: center;
-}
-
-.Portfolio-nav li {
-    margin: 0 10px;
-    display: inline;
-}
-
-.Portfolio-nav li a {
-    display: inline-block;
-    padding: 10px 22px;
-    font-size: 12px;
-    line-height: 20px;
-    color: #222222;
-    border-radius: 4px;
-    text-transform: uppercase;
-    background: #f7f7f7;
-    margin-bottom: 5px;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-
-.Portfolio-nav li a:hover {
-    background: #ED5441;
-    color: #fff;
-    text-decoration: none;
-}
-
-.portfolioContainer {
-    margin: 0 auto;
-    padding-left: 15px;
-    width: auto !important;
-}
-
-.Portfolio-box {
-    text-align: center;
-    width: 350px;
-    overflow: hidden;
-    float: left;
-    padding: 12px 0px;
-}
-
-.Portfolio-box img {
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-
-.Portfolio-box img:hover {
-    opacity: 0.6;
-}
-
-.Portfolio-nav li a.current {
-    background: #ED5441;
-    color: #fff;
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-}
-
-/* no transition on .isotope container */
-
-.isotope .isotope-item {
-  /* change duration value to whatever you like */
-    -webkit-transition-duration: 0.6s;
-    -moz-transition-duration: 0.6s;
-    transition-duration: 0.6s;
-}
-
-.isotope .isotope-item {
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    transition-property: transform, opacity;
-}
-
-.page_section.paddind {
-    padding-bottom: 60px;
-}
-
-
-/* Happy Clients
----------------------------------*/
-
-
-
-#clients {
-    padding: 60px 0px;
-}
-
-.client_area {
-    width: 960px;
-    margin: 0px auto;
-}
-
-.client_section {
-    padding: 35px 0 0 0;
-}
-
-.client_section.btm {
-    padding: 20px 0 0 0;
-}
-
-.client_profile {
-    float: left;
-    text-align: center;
-}
-
-.client_profile.flt {
-    float: right;
-}
-
-.client_profile_pic {
-    border-radius: 50%;
-    border: 2px solid #f5f5f5;
-    margin: 0 0 15px 0;
-    width: 220px;
-    height: 220px;
-}
-
-.client_profile_pic img {
-    border-radius: 50%;
-    border: 3px solid #f5f5f5;
-}
-
-.client_profile h3 {
-    font-size: 18px;
-    color: #49b5e7;
-    margin: 0 0 0 0;
-}
-
-.client_profile span {
-    display: block;
-    font-size: 16px;
-    color: #888888;
-}
-
-/* Clients
----------------------------------*/
-
-
-.client_logos {
-    background: #AD0C98;
-    padding: 60px 0;
-    margin-top: 60px;
-}
-
-.client_logos ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-}
-
-.client_logos ul li {
-    display: inline;
-    margin: 0 25px;
-}
-
-.client_logos ul a {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-.page_section.qrc {
-    padding: 60px 0;
-    background: rgb(245, 169, 169);
-}
-.page_section.maps {
-    padding: 60px 0;
-    background: rgb(245, 244, 169);
-}
-.page_section.bank {
-    padding: 60px 0;
-    background: rgb(198, 169, 245);
-}
-.page_section.sosmed {
-    padding: 60px 0;
-    background: rgb(169, 245, 175);
-}
-.page_section.team {
-    padding: 60px 0;
-    background: rgb(177, 169, 245);
-}
-.page_section.team h6 {
-    margin-bottom: 40px;
-}
-
-
-/* About Us
---------------------------- */
- 
-.aboutUs-container {
-background-repeat: no-repeat;
-background-position: right;
-background-size: auto 100%;
-background-position-y: 70px;
-}
-
-.aboutUs-container h2 {
-    font-size: 70px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-    color: #ff6060;
-}
-
-.aboutUs-container h6 {
-    font-size: 25px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-    color: #ff6060;
-}
-.aboutUs-container h3 {
-    font-size: 40px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-    color: #ff6060;
-}
-
-.page_section h2 {
-    font-size: 70px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-}
-.page_section h6 {
-    font-size: 30px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-}
-.section-title h3 {
-    font-size: 70px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-}
-.section-title h6 {
-    font-size: 25px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-}
-.service-container h2 {
-    font-size: 70px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-}
-.service-container h6 {
-    font-size: 25px;
-    font-family: 'Dancing Script', cursive;
-    text-transform: capitalize;
-    text-align: center;
-}
-.aboutUs-container h2::before {
-    content: "";
-    display: inline-block;
-    background: url("../img/border-up.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    height: 90px;
-    width: 100%;
-}
-
-.aboutUs-container h2::after {
-    content: "";
-    display: inline-block;
-    background: url("../img/border.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: 90px;
-    width: 100%;
-}
-
-#about-us, h2, h3, h6, p {
-    text-align: center;
-color: #ff6060;
-}
-#about-us .read-more{
-	border: 1px solid #ED5441;
-	color: #ff6060;
-}
-
-#about-us .read-more:hover{
-	background-color: #e74c3c;
-	border: 1px solid #e74c3c;
-	color: #fff;
-}
-.about-us-post-container{
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: auto 100%;
-}
-.about-us{
-	margin-top: 1px;
-	margin-bottom: 1px;
-}
-.about-us h3{
-	font-size:28px;
-}
-.points{ 
-	margin-bottom: 10px;
-	font-size:14px;
-	padding-left:0px;
-}
-.about-us p{
-	/*font-size: 0.9375em;*/
-	line-height: 1.625em;
-	padding: 15px 0;
-}
-
-.about-us-link a:first-child{
-	margin-left: 0;
-}
-
-
-
- .img-circle {
-border-radius: 50%;
-}
-.centered {
-text-align: center;
-/* background: #0A1525; */
-}
-
-#aboutUs {
-    padding: 60px 0;
-    background: #FFFFFF;
-}
-
-/* Contact
----------------------------------*/
-.page_section.contact {
-    padding: 90px 0 100px;
-}
- 
-.contact_section {
-    margin: 0 0 60px 0;
-}
-
-.contact_section h2 {
-    font-size: 70px;
-    color: #ff6262;
-    margin: 0 0 50px 0;
-    text-transform: uppercase;
-}
-
-.page_section h5 {
-    text-align: center;
-    font-size: 20px;
-    color: #ff6262;
-    text-transform: uppercase;
-}
-
-.contact_block {
-    text-align: center;
-}
-
-.contact_block_icon {
-    border-radius: 50%;
-    height: 85px;
-    width: 85px;
-    margin: 0px auto 20px;
-}
-
-.contact_block_icon.icon2 {
-    border-color: #ED5441;
-}
-
-.contact_block_icon.icon3 {
-    border-color: #49b5e7;
-}
-
-.contact_block_icon span {
-    background: none repeat scroll 0 0 #f56eab;
-    border: 5px solid #fff;
-    border-radius: 50%;
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
-.contact_block_icon.icon2 {
-    border-color: #ED5441;
-}
-
-.contact_block_icon.icon2 span {
-    background: #ED5441;
-}
-
-.contact_block_icon.icon3 {
-    border-color: #49b5e7;
-}
-
-.contact_block_icon.icon3 span {
-    background: #49b5e7;
-}
-
-.contact_block_icon i {
-    color: #fff;
-    font-size: 36px;
-    margin-top: 0;
-    position: relative;
-    top: 26px;
-    z-index: 20;
-}
-
-.contact_block span {
-    display: block;
-    font-size: 16px;
-    color: #ffffff;
-    line-height: 20px;
-}
-
-.contact_block span a {
-    display: block;
-    font-size: 16px;
-    color: #ffffff;
-    line-height: 20px;
-}
-
-.contact_info {
-    font-size: 15px;
-    margin: 0 0 0 20px;
-    padding-left: 0;
-}
-
-.contact_info  h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0 0 30px;
-    color: #fff;
-}
-
-.contact_info p {
-    line-height: 28px;
-    display: block;
-    font-size: 16px;
-    color: #ffffff;
-    margin: 0 0 30px;
-}
-
-.social_links {
-    padding:0;
-    margin: 0;
-    display: block;
-    overflow: hidden;
-    list-style: none;
-}
-
-.social_links li {
-    float: left;
-    margin-right: 4px;
-}
-
-.social_links li a {
-    display: block;
-    width: 164px;
-    height: 200px;
-    text-align: center;
-    line-height: 50px;
-}
-
-.social_links li a:hover, .social_links li a:focus {
-    text-decoration: none;
-    border-radius: 80px;
-}
-
-/* Footer
----------------------------------*/
-
-.footer_wrapper {
-    background: rgb(179, 245, 207);
-    margin-bottom: 70px;
-}
-
-.footer_bottom {
-    border-top: 1px solid #ff1a1a;
-    padding: 25px 0;
-}
-
-.footer_bottom span {
-    font-family: 'Courier New', Courier, monospace;
-    display: block;
-    font-size: 20px;
-    color: #3e003f;
-    text-align: center;
-}
-
-.footer_bottom span a {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: inline-block;
-    color: #ff1a1a;
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}   
-
-.footer_bottom span a:hover {
-    color: rgb(236, 93, 255);
-}
-
-/* Animation Timers
----------------------------------*/
-.delay-02s {
-    animation-delay: 0.2s;
-    -webkit-animation-delay: 0.2s;
-}
-
-.delay-03s {
-    animation-delay: 0.3s;
-    -webkit-animation-delay: 0.3s;
-}
-
-.delay-04s {
-    animation-delay: 0.4s;
-    -webkit-animation-delay: 0.4s;
-}
-
-.delay-05s {
-    animation-delay: 0.5s;
-    -webkit-animation-delay: 0.5s;
-}
-
-.delay-06s {
-    animation-delay: 0.6s;
-    -webkit-animation-delay: 0.6s;
-}
-
-.delay-07s {
-    animation-delay: 0.7s;
-    -webkit-animation-delay: 0.7s;
-}
-
-.delay-08s {
-    animation-delay: 0.8s;
-    -webkit-animation-delay: 0.8s;
-}
-
-.delay-09s {
-    animation-delay: 0.9s;
-    -webkit-animation-delay: 0.9s;
-}
-
-.delay-1s {
-    animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-}
-
-.delay-12s {
-    animation-delay: 1.2s;
-    -webkit-animation-delay: 1.2s;
-}
-
-	
-.container.portfolio_title {
-    padding-bottom: 0px;
-}
-
-#portfolio {
-    padding: 60px 0 40px;
-}
-
-
-
-/* Portfolio Filters */	
-
-#filters {
-    margin-top: 10px;
-    margin-bottom: 40px;
-    text-align: center;
-    display: block;
-    float: none;
-    z-index: 2;
-    position: relative;
-}
-
-#filters ul li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-#filters ul li a {
-    display: block;
-}
-
-#filters ul li a h5 {
-    background: none repeat scroll 0 0 #f7f7f7;
-    border-radius: 4px;
-    display: inline-block;
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="icon" href="img/icon/love.webp">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Dancing+Script|Dosis|Kaushan+Script|Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" type="text/css"> 
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
     
-    font-size: 12px;
-    line-height: 20px;
-    margin-bottom: 5px;
-    padding: 10px 22px;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out 0s;
-    background: #fff;
-    border: #C2C2C2 solid 1px;
-    color: #7C7C7C;
-}
+    <title>Kucing & Musang</title>
+  </head>
 
-#filters ul li a:hover h5, #filters ul li a.active h5 {
-    background: #AD0C98;
-    color: #FFFFFF;
-    text-decoration: none;
-    border: #AD0C98 solid 1px;
-}
-
-.section-title h2 {
-    color: #222222;
-    font-family: 'Raleway', sans-serif;
-    font-size: 34px;
-    letter-spacing: -1px;
-    margin: 0 0 15px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.section-title span {
-    display: block;
-    color: #888888;
-    font-family: 'Open Sans',sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0 0 60px;
-    text-align: center;
-}
-
-
-
-/* Portfolio Items */	
-
-#portfolio_wrapper {
-    position: relative;
-    padding: 0;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-}
-
-#portfolio_wrapper .one-four {
-    margin: 0!important;
-    line-height: 0;
-    width: 25%;
-    padding: 0;
-    position: relative;
-}
-
-.portfolio-item {
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio-item .portfolio_img {
-    overflow: hidden;
-    display: block;
-    position: relative;
-}
-
-.portfolio-item .portfolio_img img {
-    width: 100%;
-    height: auto;
-}
-
-.portfolio-item:hover .item_overlay {
-    opacity: 1;
-    transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -webkit-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-}
-
-.item_overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    cursor: pointer;
-}
-
-.item_overlay:hover {
-    background:rgba(89, 89, 89, 0.7);
-}
-
-.item_info {
-    position: absolute;
-    height: 100px;
-    width: 100%;
-    top: 50%;
-    margin-top: -50px;
-    text-align: center;
-}
-
-.project_name {
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 25px;
+  <!-- Card Undangan --> 
+  <body class="body">
+    <audio class="audio" src="img/keepyousafe.mp3" autoplay type="audio" loop=""></audio>
+    <div class="container open">
+      <div class="card">
+        <h2>The Wedding Of</h2>
+        <h2>Kucing & Musang</h2>
+          <img onclick="mulai()" src="img/mail.png" alt="" srcset="" />
+        <h3>Kepada Yth.<br>
+        Bapak/Ibu/Saudara/i<br>
+        di Tempat<br>
+        Silahkan Tekan Amplop</h3>
+      </div>
+    </div>
+    <img src="img/icon/love.webp" style="position: absolute; width:25%;"/>
+    <div class="atas" id="atas">
+      <img onclick="mulai()" src="img/slide3.jfif" alt="" />
+      <h2>Wedding<br>Happy Couple</h2>
+      <h6>Kucing & Musang<br><br>22 January 2000</h6>
+      <h3>Di Scroll Kebawah Yuk!</h3>
+    </div>
+    <!-- Card Undangan --> 
     
-    opacity: 0;
-    font-size: 18px;
-    transition: all 0.2s ease 0s;
-    -moz-transition: all 0.2s ease 0s;
-    -webkit-transition: all 0.2s ease 0s;
-    -ms-transition: all 0.2s ease 0s;
-    -o-transition: all 0.2s ease 0s;
-    position: relative;
-    z-index: 10;
-}
+    <!-- Navbar -->
+    <header id="header_wrapper">
+      <div class="container">
+        <div class="header_box">
+          <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+              <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div id="main-nav" class="collapse navbar-collapse navStyle">
+              <ul class="nav navbar-nav" id="mainNav">
+                <li class="active"><a href="#intros" class="scroll-link">Home</a></li>
+                <li><a href="#aboutUs" class="scroll-link">Couple</a></li>
+                <li><a href="#service" class="scroll-link">Event</a></li>
+                <li><a href="#Portfolio" class="scroll-link">Gallery</a></li> 
+                <li><a href="#team" class="scroll-link">Family</a></li>
+                <li><a href="#contact" class="scroll-link">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar --> 
+    
+    <!-- Couple --> 
+    <section id="aboutUs">
+      <div class="inner_wrapper about-us aboutUs-container fadeInLeft animated wow">
+        <div class="container">
+          <h2>Couple</h2>
+          <h6>assalamualaikum warahmatullahi wabarakatuh</h6>
+          <h6>Dengan Memohon Rahmat Dan Ridho Allah SWT, Kami Akan Menyelenggarakan Resepsi Pernikahan Putra-Putri Kami :</h6>
+            <div class="gambarikon wow zoomIn" id="gambarikon">
+              <img src="img/slide.webp" alt="" />
+              <h3>Kucing</h3><br>
+              <h3>Putra Bpk Meong dan Ibu Meong.</h3><br>
+            </div>
+            <div class="gambarikon wow zoomIn" id="gambarikon">
+              <img src="img/slide2.webp" alt="" />
+              <h3>Musang</h3><br>
+              <h3>Putra Bpk Gukguk dan Ibu Gukguk.</h3>
+            </div>  
+        </div>
+      </div>
+    </section>
+    <!-- Couple --> 
 
-.portfolio-item:hover .project_name {
-    opacity: 1;
-    -webkit-transition: opacity .1s .2s;
-    -moz-transition: opacity .1s .2s;
-    -ms-transition: opacity .1s .2s;
-    -o-transition: opacity .1s .2s;
-    transition: opacity .1s .2s;
-}
+    <!--Acara-->
+    <section id="service">
+      <div class="service-container">
+        <h2>Acara</h2>
+          <h6>Beberapa Acara Kami Yang Akan Diselenggarakan :</h6>
+        <div class="service_wrapper">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="service_icon delay-03s animated wow  zoomIn"><img src="img/icon/akad.webp"/></div>
+                <div class="service_block">
+                  <h4 class="animated fadeInDown wow">Akad Pernikahan</h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service_icon delay-03s animated wow  zoomIn"><img src="img/icon/resepsi.webp"/></div>
+                <div class="service_block">
+                  <h4 class="animated fadeInDown wow">Resepsi Pernikahan</h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service_icon delay-03s animated wow  zoomIn"><img src="img/icon/magic.webp"/></div>
+                <div class="service_block">
+                  <h4 class="animated fadeInDown wow">Pertunjukan</h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service_icon delay-03s animated wow  zoomIn"><img src="img/icon/dinner.webp"/></div>
+                <div class="service_block">
+                  <h4 class="animated fadeInDown wow">Prasmanan</h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service_icon delay-03s animated wow  zoomIn"><img src="img/icon/games.webp"/></div>
+                <div class="service_block">
+                  <h4 class="animated fadeInDown wow">Permainan</h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service_icon delay-03s animated wow  zoomIn"><img src="img/icon/photo.webp"/></div>
+                <div class="service_block">
+                  <h4 class="animated fadeInDown wow">Foto Bersama</h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service_icon delay-03s animated wow  zoomIn"><img src="img/icon/video.webp"/></div>
+                <div class="service_block">
+                  <h4 class="animated fadeInDown wow">Documentary</h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service_icon delay-03s animated wow  zoomIn"><img src="img/icon/note.webp"/></div>
+                <div class="service_block">
+                  <h4 class="animated fadeInDown wow">Sabtu, 22 Januari 2000<br>Pukul 09:00 - 17:00 WIB<br>Cisadane Khalifa Tower</h4>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <!--Acara-->
+    
+    <!-- Gallery -->
+    <section id="Portfolio" class="content"> 
+      <div class="container portfolio_title"> 
+        <div class="section-title">
+          <h3>Photo Gallery</h3>
+            <h6>Momen Kisah Pertemuan Yang Indah</h6>
+        </div>
+      </div>
+
+      <div class="portfolio-top"></div>
+      <div class="portfolio"> 
+        <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">  
+          
+          <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four appleIOS isotope-item effect-oscar">
+            <div class="portfolio_img"> 
+              <img src="img/portfolio_pic1.webp">
+            </div> 
+            <figcaption>		
+              <div><a href="img/portfolio_pic1.webp" class="fancybox"> 
+                <h2>First <span>Dating</span></h2></a>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item effect-oscar">
+            <div class="portfolio_img">
+              <img src="img/portfolio_pic2.webp">
+            </div>
+            <figcaption>		
+              <div><a href="img/portfolio_pic2.webp" class="fancybox"> 
+                <h2>Garden <span>Dating</span></h2></a>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item effect-oscar">
+            <div class="portfolio_img">
+              <img src="img/portfolio_pic5.webp">
+            </div>
+            <figcaption>		
+              <div><a href="img/portfolio_pic5.webp" class="fancybox"> 
+                <h2>Sunset <span>Dating</span></h2></a>
+              </div>
+            </figcaption>
+          </figure>
+          
+          <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item effect-oscar">
+            <div class="portfolio_img">
+              <img src="img/portfolio_pic6.webp">
+            </div>
+            <figcaption>		
+              <div><a href="img/portfolio_pic6.webp" class="fancybox"> 
+                <h2>Marriage  <span>Proposal</span></h2></a>
+              </div>
+            </figcaption>
+          </figure>
+          
+          <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item effect-oscar">
+            <div class="portfolio_img">
+              <img src="img/portfolio_pic7.webp">
+            </div>       
+            <figcaption>		
+              <div><a href="img/portfolio_pic7.webp" class="fancybox"> 
+                <h2>Pre-Wedding <span>Photo</span></h2></a>
+              </div>
+            </figcaption>
+          </figure>
+          
+        </div>
+      </div>
+      <div class="portfolio_btm"></div>
+      <div id="project_container">
+        <div class="clear"></div>
+        <div id="project_data"></div>
+      </div> 
+    </section>
+    <!-- Gallery -->
+
+    <!-- Keluarga -->
+    <section class="page_section team" id="team">
+      <div class="container wow fadeInLeft">
+        <h2>Our Family</h2>
+
+        <h6>Keluarga Kucing.</h6>
+          <div id="team" name="team">
+            <div class="container wow fadeInLeft">
+              <div class="row centered wow fadeInLeft">
+                <div class="col-md-3 centered"> <img class="img img-circle" src="img/icon/ayah1.webp" height="120px" width="120px" alt="">
+                    <h4><b>Lionel Roy<br>(Ayah)</b></h4><br/>
+                </div>
+                <div class="col-md-3 centered wow fadeInLeft"> <img class="img img-circle" src="img/icon/ibu1.webp" height="120px" width="120px" alt="">
+                    <h4><b>Antonella Jeje<br>(Ibu)</b></h4><br/>
+                </div>
+                <div class="col-md-3 centered wow fadeInLeft"> <img class="img img-circle" src="img/icon/ade1.webp" height="120px" width="120px" alt="">
+                    <h4><b>Gracia Bakwan<br>(Adik)</b></h4><br/>
+                </div>
+                <div class="col-md-3 centered wow fadeInLeft"> <img class="img img-circle" src="img/icon/ade2.webp" height="120px" width="120px" alt="">
+                    <h4><b>Sebastian Kurma<br>(Adik)</b></h4><br/>
+                </div>
+                <div class="col-md-3 centered wow fadeInLeft"> <img class="img img-circle" src="img/icon/ade3.webp" height="120px" width="120px" alt="">
+                  <h4><b>Antonio Pastel<br>(Adik)</b></h4><br/>
+              </div>
+              </div>
+            </div>
+          </div>
+
+        <h6>Keluarga Musang.</h6>
+          <div id="team" name="team">
+            <div class="container wow fadeInLeft">
+              <div class="row centered wow fadeInLeft">
+                <div class="col-md-3 centered wow fadeInLeft"> <img class="img img-circle" src="img/icon/ayah2.webp" height="120px" width="120px" alt="">
+                    <h4><b>Do-San<br>(Ayah)</b></h4><br/>
+                </div>
+                <div class="col-md-3 centered wow fadeInLeft"> <img class="img img-circle" src="img/icon/ibu2.webp" height="120px" width="120px" alt="">
+                    <h4><b>Dal-Mi<br>(Ibu)</b></h4><br/>
+                </div>
+                <div class="col-md-3 centered wow fadeInLeft"> <img class="img img-circle" src="img/icon/kakak1.webp" height="120px" width="120px" alt="">
+                    <h4><b>Ji-Yeong<br>(Kakak)</b></h4><br/>
+                </div>
+                <div class="col-md-3 centered wow fadeInLeft"> <img class="img img-circle" src="img/icon/kakak2.webp" height="120px" width="120px" alt="">
+                    <h4><b>Kim Jong-Un <br>(Kakak)</b></h4><br/>
+                </div>
+                <div class="col-md-3 centered wow fadeInLeft"> <img class="img img-circle" src="img/icon/kakak3.webp" height="120px" width="120px" alt="">
+                  <h4><b>Ho Yeon<br>(Kakak)</b></h4><br/>
+              </div>
+              <div class="col-md-3 centered wow fadeInLeft"> <img class="img img-circle" src="img/icon/adek1.webp" height="120px" width="120px" alt="">
+                <h4><b>Ji-Pyeong<br>(Adik)</b></h4><br/>
+            </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    <!-- Keluarga -->
+
+    <!-- Ucapan -->
+    <footer class="footer_wrapper" id="contact">
+      <div class="container">
+        <section class="page_section contact" id="contact">
+          <div class="contact_section wow fadeInLeft">
+            <h2>Ucapan & Doa</h2>
+            <h6>Berikan kami ucapan & doa</h6>
+          </div>
+          <div class="row">
+            <div class="sosmed wow fadeInLeft">	    
+              <ul class="social_links">
+                <li class="animated bounceIn wow delay-02s"><a href="https://www.instagram.com/armatriwah/"><img src="img/sosmed/facebook.webp"></a></li>
+                <li class="animated bounceIn wow delay-03s"><a href="https://www.instagram.com/armatriwah/"><img src="img/sosmed/instagram.webp"></a></li>
+                <li class="animated bounceIn wow delay-05s"><a href="https://www.instagram.com/armatriwah/"><img src="img/sosmed/snapchat.webp"></a></li> 
+                <li class="animated bounceIn wow delay-06s"><a href="https://www.instagram.com/armatriwah/"><img src="img/sosmed/tiktok.webp"></a></li> 
+                <li class="animated bounceIn wow delay-07s"><a href="https://www.instagram.com/armatriwah/"><img src="img/sosmed/twitter.webp"></a></li> 
+                <li class="animated bounceIn wow delay-08s"><a href="https://www.instagram.com/armatriwah/"><img src="img/sosmed/whatsapp.webp"></a></li> 
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    <!-- Ucapan -->
+
+    <div class="bank_section" id="gift">
+      <input class="checkbox" type="checkbox" name="general" id="general">
+
+          <input class="checkbox-budget" type="radio" name="budget" id="budget-1" checked>
+          <label class="animated bounceIn wow delay-02s for-checkbox-budget" for="budget-1">
+            <img src="img/bank/bca.webp"><span data-hover="12345xxxxx">.</span>
+          </label>
+
+          <input class="checkbox-budget" type="radio" name="budget" id="budget-2">
+          <label class="animated bounceIn wow delay-03s for-checkbox-budget" for="budget-2">
+            <img src="img/bank/bni.webp"><span data-hover="12345xxxxx">.</span>
+          </label>
+
+          <input class="checkbox-budget" type="radio" name="budget" id="budget-3">
+          <label class="animated bounceIn wow delay-04s for-checkbox-budget" for="budget-3">
+            <img src="img/bank/bri.webp"><span data-hover="12345xxxxx">.</span>
+          </label>
+
+          <input class="checkbox-budget" type="radio" name="budget" id="budget-4">
+          <label class="animated bounceIn wow delay-05s for-checkbox-budget" for="budget-4">	
+            <img src="img/bank/dana.webp"><span data-hover="12345xxxxx">.</span>
+          </label>
+
+          <input class="checkbox-budget" type="radio" name="budget" id="budget-5">
+          <label class="animated bounceIn wow delay-06s for-checkbox-budget" for="budget-5">							
+            <img src="img/bank/gopay.webp"><span data-hover="12345xxxxx">.</span> 
+          </label>
+          
+          <input class="checkbox-budget" type="radio" name="budget" id="budget-6">
+          <label class="animated bounceIn wow delay-07s for-checkbox-budget" for="budget-6">							
+            <img src="img/bank/linkaja.webp"><span data-hover="12345xxxxx">.</span>
+          </label>
+
+          <input class="checkbox-budget" type="radio" name="budget" id="budget-7">
+          <label class="animated bounceIn wow delay-08s for-checkbox-budget" for="budget-7">							
+            <img src="img/bank/mandiri.webp"><span data-hover="12345xxxxx">.</span>
+          </label>
+
+          <input class="checkbox-budget" type="radio" name="budget" id="budget-8">
+          <label class="animated bounceIn wow delay-09s for-checkbox-budget" for="budget-8">							
+            <img src="img/bank/ovo.webp"><span data-hover="12345xxxxx">.</span>
+          </label>
+
+        </div>
+    </div>
+      
+    <div class="animated bounceIn wow delay-02s container" id="lokasi">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4467887770725!2d106.76256798067928!3d-6.336125937158359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efa999f334e7%3A0xd0ce5831591c54dd!2sBandar%20Udara%20Pondok%20Cabe!5e0!3m2!1sid!2sid!4v1658433720775!5m2!1sid!2sid" 
+    width="300" height="250" left="-50px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+  
+<div class="animated bounceIn wow delay-02s container" id="qr">
+  <div id="barCode">
+    <h6>SCAN ME</h6>
+    <img src="http://www.hascode.com/wp-content/uploads/2010/05/qr-code-inverted-error.png"/>
+  </div>
+  <div id="content">
+    <div class="location" id="from">
+      <div class="code">ARMA</div>
+      <div class="city">Gedon</div>
+    </div>
+
+    <div class="location" id="to">
+      <div class="code">ROBERT</div>
+      <div class="city">Gedonowski</div>
+    </div>
+
+    <hr class="lineOne"/>
+    <div id="info">
+      <div class="col1">
+        <div class="greyTxt">TANGGAL</div>
+        <div class="specifics">22</div>
+      </div>
+      <div class="col2">
+        <div class="greyTxt">BULAN</div>
+        <div class="specifics">JANUARI</div>
+      </div>
+      <div class="col3">
+        <div class="greyTxt">TAHUN</div>
+        <div class="specifics">2000</div>
+      </div>
+    </div>
+    <hr class="lineTwo"/>
+    <div id="boarding">
+      <div class="title">OPEN GATE</div>
+      <div class="boardInfo">09:00 - 17:00</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <section class="page_section contact" id="contact">
+    <i onclick="tanya()" class="animated bounceIn wow delay-09s material-icons-sharp"> favorite </i></a>
+    <h5>Tekan Hati Untuk Memberi Pesan</h5>
+  </section>
+</div>
 
 
-.portfolio-item:hover .project_catg {
-    opacity: 0.8;
-    -webkit-transition: opacity .1s .2s;
-    -moz-transition: opacity .1s .2s;
-    -ms-transition: opacity .1s .2s;
-    -o-transition: opacity .1s .2s;
-    transition: opacity .1s .2s;
-}
 
+    <!-- Footer -->
+      <div class="container">
+        <div class="footer_bottom"><span>Copyright © 2022. <a href="https://www.instagram.com/armatriwah/">Armagedon.</a></span> </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+    
+    
+<div class='menubottom'>
+    <nav>
+        <ul>
+          <li><a href='#' title='Home'><img src="img/icon/love2.webp" width="50px"><span>Home</span></a></li>
+          <li><a href='#service' title='Calender'><img src="img/icon/calender.webp" width="50px"><span>Calender</span></a></li>
+          <li><a href='#gift' itempro' title='Gift'><img src="img/icon/gift.webp" width="50px"><span>Gift</span></a></li>
+          <li><a href='#lokasi' title='Location'><img src="img/icon/location.webp" width="50px"><span>Location</span></a></li>
+          <li><a href='#qr' title='QR'><img src="img/icon/qr.webp" width="50px"><span>QR Code</span></a></li>
+        </ul>
+    </nav>
+</div>
 
-.portfolio-item:hover .zoom-icon {
-    opacity: 1;
-    margin-top: 0px;
-    -webkit-transition: opacity .3s .2s, margin-top .3s .2s;
-    -moz-transition: opacity .3s .2s, margin-top .3s .2s;
-    -ms-transition: opacity .3s .2s, margin-top .3s .2s;
-    -o-transition: opacity .3s .2s, margin-top .3s .2s;
-    transition: opacity .3s .2s, margin-top .3s .2s;
-}
-	
-	
-	
-	
-/* Portfolio Isotope Transitions */	
-
-.isotope, .isotope .isotope-item {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -ms-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-}
-
-.isotope {
-    -webkit-transition-property: height, width;
-    -moz-transition-property: height, width;
-    -ms-transition-property: height, width;
-    -o-transition-property: height, width;
-    transition-property: height, width;
-}
-
-.isotope .isotope-item {
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    -ms-transition-property: -ms-transform, opacity;
-    -o-transition-property: -o-transform, opacity;
-    transition-property: transform, opacity;
-}
-
-.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
-    -webkit-transition-duration: 0s;
-    -moz-transition-duration: 0s;
-    -ms-transition-duration: 0s;
-    -o-transition-duration: 0s;
-    transition-duration: 0s;
-}
-
-#project_container {
-    display: none;
-    background-color: #FFF;
-}
-
-#project_data {
-    margin-bottom: 0px;
-}
-
-/*
-   Media Queries
---------------------------- */
-@media only screen and (min-width: 768px) {
-.main-title{
-	width:95%;
-}
-.aboutUs-container {
-background-repeat: no-repeat;
-background-position: right;
-background-size: auto 59%;
-background-position-y: 150px;
-}
-}
-@media (max-width: 768px) {
-.navStyle {
-float: right;
-width: auto; 
-text-align: center;
-}
-.aboutUs-container{
-	background-image:none;
-}
-p{
-font-size:14px;
-}
-.top_cont_outer { 
-height: 335px;
-}
-.hero_section {
-position: relative;
-padding-top: 10px;
-}
-.top_left_cont h2 {
-    font-size: 40px;
-    color: #fff;
-    line-height: 90px;
-    margin: 0 0 72px 0;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    font-size: 24px;
-}
-
-.top_left_cont h2 strong {
-    font-weight: 700;
-    color: #fff;
-    font-family: 'Clicker Script', cursive;
-    text-transform: capitalize;
-    /* margin: 15px 0; */
-    font-size: 98px;
-}
-.top_left_cont {
-    padding: 20% 0 0;
-}
-.top_left_cont {
-padding: 38px 0;
-}
-.top_left_cont h2 {font-size: 25px;color: #ff6060;line-height: 74px;margin: 0 0 9px 0;}
-.inner_section {
-padding: 20px 0 20px;
-}
-#aboutUs img{
-margin-bottom:20px;
-}
-#aboutUs h3{
-font-size:26px;
-line-height:22px;
-}
-.service_block h3 { 
-font-size: 16px;
-}
-.service_block p {
-font-size: 14px; 
-margin: 0px;
-margin-bottom: 20px;
-}
-#filters ul{
-padding-left:0px;
-}
-.form {
-margin: 0 18px;
-}
-
-#clients {
-padding: 40px 0;
-}
-
-.client_logos ul li {
-display: inline;
-margin: 0 25px;
-padding: 11px 0;
-display: inline-block;
-}
-.social_links li {
-float: left; 
-}
-.contact_section{
-margin:0;
-}
-h2, .contact_section h2 {
-font-size: 50px;
-}
-.page_section.contact {
-padding: 60px 0 50px;
-} 
-.navbar-inverse .navbar-toggle .icon-bar{background: #fff;}
-.navbar-inverse .navbar-toggle {
-border-color: transparent;
-}
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
-background:none;
-outline: none;
-}
-.navStyle ul li {display: block;float: left;}
-.navStyle {
-float: right !important;
-width: 100%;
-text-align:center;
-}
-
-.navbar {
-border: 0px solid #fff;
-min-height: 40px;
-margin-bottom: 0px;
-float: right;
-width: 100%;
-}
-.navStyle ul li {display: block;margin: 0px;/* text-align: center; */}
-.navStyle ul li:last-child {
-margin: 0px;
-}
-.navbar-inverse .navbar-nav > li > a {font-size:12px;padding: 10px 11px;}
-} 
-@media (max-width: 480px){ 
-.navStyle {
-float: left;
-width: 100%; 
-text-align: left;
-}
-}
-
-/* Navbar Bottom*/
-.menubottom{
-    display:none
-}
-
-@media screen and (max-width:768px){
-.menubottom{
-    position:fixed;
-
-    z-index:5;
-    bottom:0;
-    text-align:center;
-    display:block
-}
-.menubottom nav ul{
-    display:flex!important;
-    width:380px!important;
-    padding-left:0;
-    margin-bottom:0;
-    flex-direction:row!important;
-    list-style:none
-}
-
-.menubottom nav ul li a{
-    display:block;
-    text-decoration:none;
-    padding:.4rem 
-}
-
-}
-
-
-.menubottom nav{
-    background-color:rgb(255,255,255);
-    background-image: linear-gradient(110deg,rgba(33,150,243,0.1) 16%,rgba(33,150,243,0.1) 17%,rgba(33,150,243,0.05) 17%,rgba(33,150,243,0.05) 23%,transparent 8.5%,transparent 78%,rgba(33,150,243,0.05) 78%,rgba(33,150,243,0.05) 84%,rgba(33,150,243,0.1) 84%,rgba(33,150,243,0.1));
-    align-items:center;
-    box-shadow:0 -1px 3px rgba(0,0,0,.3);
-}
-.menubottom ul li{
-    float:left;
-    width:100px;
-    height:100%;
-    background-position:center;
-    display:block
-}
-.menubottom ul li{
-    float:left;
-    width:100px;
-    height:100%;
-    background-position:center;
-    display:block
-}   
-
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script> 
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
+    <script type="text/javascript" src="js/wow.js"></script> 
+    <script src="contact/jqBootstrapValidation.js"></script> 
+    <script src="js/rAF.js"></script>
+    <script src="js/demo-2.js"></script>
+    <script src="contact/contact_me.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script>var musik = "";</script>
+    <script> AOS.init({ once: true, });</script>
+    <script> var audio = document.querySelector(".audio");
+      if(musik) {
+        audio.src = musik;
+      } 
+      function mulai() { 
+        audio.play();
+        document.querySelector(".open").style = "opacity: 0;";
+        document.querySelector(".body").style = "overflow-y: scroll;";
+        setTimeout(function () { 
+        document.querySelector(".open").style.display = "none";
+      }, 1000);
+      } 
+      function wa(isi) { 
+        window.open("https://api.whatsapp.com/send?text= Hallo, Orang gila. Saya mau ngucapin " + isi);
+      } 
+      async function tanya() {
+        var {
+        value: kado 
+      } = await swal.fire({ title: "Silahkan isi pesan yang ingin dikirim ke mempelai", input: "text", showCancelButton: false, });
+      if (kado) { await swal.fire("Kirim ke Whatsapp gue ya, sobat"); wa(kado); 
+      } else {
+      await swal.fire("Isi dulu dong, kalo ga diisi yaudah refresh ulang hehe"); tanya();
+      } }
+      </script>
+  </body>
+</html>
