@@ -1522,6 +1522,27 @@ height: 335px;
 position: relative;
 padding-top: 10px;
 }
+.top_left_cont h2 {
+    font-size: 40px;
+    color: #fff;
+    line-height: 90px;
+    margin: 0 0 72px 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+.top_left_cont h2 strong {
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Clicker Script', cursive;
+    text-transform: capitalize;
+    /* margin: 15px 0; */
+    font-size: 98px;
+}
+.top_left_cont {
+    padding: 20% 0 0;
+}
 .top_left_cont {
 padding: 38px 0;
 }
@@ -1767,16 +1788,4 @@ text-align: left;
     height: 500px;
     margin-bottom: 50px;
     margin-left: 50px;
-  }
-
-
-#lokasi {
-    font-family: "Roboto", sans-serif;
-    border-radius: 20px;
-    width: 350px;
-    height: 250px;
-    background: rgb(255, 132, 132);
-    margin-bottom: 50px;
-    padding-right: 30px;
-    padding-left: 25px;
   }
